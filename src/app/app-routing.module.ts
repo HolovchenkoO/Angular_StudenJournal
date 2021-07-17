@@ -1,31 +1,37 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {StudentJournalComponent} from "./components/studensJournal/studentJournal.component";
+import {AdminComponent} from "./modules/admin/admin.component";
+import {ErrorComponent} from "./components/error/error.component";
 
 const routes: Routes = [
-  /*{
-   // path: '', component: ProductsComponent
-  },
   {
-    path: 'admin',
-    canActivate: [AuthGuard],
-    children: [
-      {
-        path: '',
-        pathMatch: 'full',
-        redirectTo: 'dashboard'
-      },
-      {
-        path: 'dashboard',
-        component: DashboardComponent
-      }
-    ]
-  },
+    path: '', component: StudentJournalComponent
+  } ,
   {
-    path: 'info/:id', component: InfoComponent
+    path: 'admin', component: AdminComponent
   },
+  // {
+  //   path: 'admin',
+  //   canActivate: [AuthGuard],
+  //   children: [
+  //     {
+  //       path: '',
+  //       pathMatch: 'full',
+  //       redirectTo: 'dashboard'
+  //     },
+  //     {
+  //       path: 'dashboard',
+  //       component: DashboardComponent
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: 'info/:id', component: InfoComponent
+  // },
   {
     path: '**', component: ErrorComponent
-  }*/
+  }
 ];
 
 @NgModule({
