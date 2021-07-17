@@ -15,7 +15,7 @@ import {RouterModule} from "@angular/router";
     RouterModule,
     BrowserAnimationsModule,
   ],
-  // exports: [AdminComponent],
+  exports: [AdminComponent],
   providers: [],
 })
 export class AdminModule { }

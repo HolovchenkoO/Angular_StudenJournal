@@ -9,6 +9,7 @@ import {StudentJournalService} from "./components/studensJournal/studentJournalS
 import {MatListModule} from "@angular/material/list";
 import {AdminComponent} from "./modules/admin/admin.component";
 import {ErrorComponent} from "./components/error/error.component";
+import {AdminModule} from "./modules/admin/admin.module";
 
 
 
@@ -16,14 +17,14 @@ import {ErrorComponent} from "./components/error/error.component";
   declarations: [
     AppComponent,
     StudentJournalComponent,
-    AdminComponent,
     ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
+    AdminModule
   ],
   providers: [StudentJournalService],
   bootstrap: [AppComponent]

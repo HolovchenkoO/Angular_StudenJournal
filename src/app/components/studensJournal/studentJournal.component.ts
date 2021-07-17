@@ -30,4 +30,10 @@ import {Student} from "./interfaces/student.interface";
 
 export class StudentJournalComponent {
 
+  constructor(private router: Router) {
+  }
+  onBtnClick() {
+    // програмная навигация
+    this.router.navigate(['/admin']);
+  }
 }
